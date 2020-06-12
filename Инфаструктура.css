@@ -1,0 +1,67 @@
+.parent{
+  display: flex;
+  justify-content: center;
+
+}
+
+.w1,
+.w2,
+.w3,
+.w4{
+  width: 20%;
+}
+
+.w2_2{
+  margin-left: 50px;
+}
+
+.w2,
+.w3,
+.w4{
+  text-align: center;
+}
+
+@media(max-width: 800px) {
+  .parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.hero-image4 {
+  background-image: url("https://hevcars.com.ua/wp-content/uploads/2018/02/tesla-model-3-exterior-hevcars-05.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.w1,
+.w2,
+.w3,
+.w4{
+  margin: 0 auto;
+  width: max-content;
+}
+
+.w2_2{
+  text-align: center;
+  margin-left: 150px;
+}
+
+.flexbox{
+  width: 500px;
+  width: content;
+  margin: 0 auto;
+  color: #fff;
+}
+}
+
+.bottom-top{
+  text-align: center;
+}
+
+span{
+font-family: 'Indie Flower', cursive;
+}

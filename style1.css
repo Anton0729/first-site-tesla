@@ -1,0 +1,622 @@
+*{
+font-family: 'Indie Flower', cursive;
+ padding: 0;
+ margin: 0;
+}
+*/
+header{
+	position: fixed;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: url("../img/banner.jpg");
+  height: 675px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  margin-top: 20px;
+
+}
+
+.button{
+	width: 180px;
+	height: 55px;
+	background-color: red;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+	color: white;
+	margin-top: 10px;
+}
+
+.parent1,
+.parent2,
+.parent11{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+@media(max-width: 600px) {
+.
+}
+
+@media(max-width: 1000px) {
+	.parent1,
+	.parent2,
+	.parent11{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		animation: none;
+	}
+
+	.block1,
+	.block1_1,
+	.block11{
+		margin: 0 auto;
+		width: max-content;
+		width: 400px;
+		animation: none;
+	}
+
+	.block1:hover{
+		animation: none;
+	}
+
+	.block2,
+	.block2_2,
+	.block22{
+		margin: 0 auto;
+		width: max-content;
+		animation: none;
+	}
+}
+
+
+.block1{
+	width: 540px;
+	height: 320px;
+    transition-property: width, height, background;
+    background-image: url(../img/model-x.jpg);
+    transition-delay: .1s;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    margin-right: 50px;
+		}
+
+.block1:hover {
+	width: 650px;
+	height: 450px;
+	cursor: pointer;
+	background-image: url(https://tesla-club.com.ua/storage/images/tesla/model-x.png);
+	background-repeat: no-repeat;
+}
+
+.block11{
+	width: 540px;
+	height: 320px;
+    transition-property: width, height, background;
+    background-image: url(../img/model-x.jpg);
+    transition-delay: .1s;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    margin-right: 50px;
+		}
+
+.block11:hover {
+	width: 650px;
+	height: 450px;
+	cursor: pointer;
+	background-image: url(https://tesla-club.com.ua/storage/images/tesla/model-x.png);
+	background-repeat: no-repeat;
+}
+
+
+.b_x1{
+	background-color: red;
+	width: 120px;
+	height: 40px;
+	border: none;
+	cursor: pointer;
+	color: white;
+	font-size: 15px;
+}
+
+.b_x2{
+	width: 150px;
+	height: 40px;
+	border-color: red;
+	cursor: pointer;
+	color: red;
+	background-color: white;
+	margin-left: 10px;
+	font-size: 15px;
+}
+
+.b_x3{
+	width: 150px;
+	height: 40px;
+	border-color: red;
+	cursor: pointer;
+	color: red;
+	background-color: white;
+	margin-left: 10px;
+	font-size: 15px;
+}
+
+.b_x2:hover,
+.b_x3:hover{
+	background-color: red;
+	color: white;
+}
+
+hr{
+	width: 1200px;
+	margin: 0 auto;
+	width: content;
+	background-color: red;
+	height: 3px;
+}
+
+@media(max-width: 1000px) {
+	hr{
+	width: 400px;
+}
+}
+
+.block1_1{
+	width: 540px;
+	height: 320px;
+    transition-property: width, height, background;
+    background-image: url(../img/ms.jpg);
+    transition-delay: .1s;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+		}
+
+.block1_1:hover {
+	width: 650px;
+	height: 450px;
+	cursor: pointer;
+	background-image: url(https://tesla-club.com.ua/storage/images/tesla/model-s.png);
+	background-repeat: no-repeat;
+}
+
+.block3_3{
+	width: 540px;
+	height: 320px;
+    transition-property: width, height, background;
+    background-image: url(../img/3.jpg);
+    transition-delay: .1s;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    margin-right: 50px;
+		}
+
+.block3_3:hover {
+	width: 650px;
+	height: 450px;
+	cursor: pointer;
+	background-image: url(https://tesla-club.com.ua/storage/images/tesla/model-3.png);
+	background-repeat: no-repeat;
+}
+
+
+.parent123,
+.parent2,
+.parent11{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+@media(max-width: 1000px) {
+	.parent123{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.block1234{
+		margin: 0 auto;
+		width: max-content;
+		width: 200px;
+		height: 200px;
+	}
+
+	.block12345{
+		margin: 0 auto;
+		width: max-content;
+	}
+
+}
+
+
+.block1234{
+	width: 540px;
+	height: 320px;
+    transition-property: width, height, background;
+    background-image: url(../img/3.jpg);
+    transition-delay: .1s;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    margin-right: 50px;
+		}
+
+.block1234:hover {
+	width: 650px;
+	height: 450px;
+	cursor: pointer;
+	background-image: url(https://tesla-club.com.ua/storage/images/tesla/model-3.png);
+	background-repeat: no-repeat;
+}
+
+
+
+
+@media(max-width: 600px){
+
+	.l{
+		width: 300px;
+	}
+}
+
+
+
+.l{
+	width: 480px;
+}
+
+.hero-image {
+  background-image: url("../img/banner.jpg");
+  height: 675px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  margin-top: 20px;
+
+}
+
+.button{
+	width: 180px;
+	height: 55px;
+	background-color: red;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+	color: white;
+	margin-top: 10px;
+}
+
+      .timeline {
+        position: relative;
+        list-style: none;
+        padding: 1rem 0;
+        margin: 0;
+      }
+
+      .timeline::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        margin-left: -1px;
+        background-color: red;
+      }
+
+      .timeline-element {
+        position: relative;
+        width: 50%;
+        padding: 1rem 0;
+        padding-right: 2.5rem;
+        text-align: right;
+      }
+
+      .timeline-element::before {
+        content: '';
+        position: absolute;
+        right: -8px;
+        top: 1.35rem;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 2px solid red;
+        background-color: #fff;
+      }
+
+      .timeline-element:nth-child(even)::before {
+        right: auto;
+        left: -8px;
+      }
+
+      .timeline-element:nth-child(even) {
+        margin-left: 50%;
+        padding-left: 2.5rem;
+        padding-right: 0;
+        text-align: left;
+      }
+
+      @media (max-width: 767.98px) {
+        .timeline::before {
+          left: 8px;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        .timeline-element {
+          width: 100%;
+          text-align: left;
+          padding-left: 2.5rem;
+          padding-right: 0;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        .timeline-element::before {
+          top: 1.25rem;
+          left: 1px;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        .timeline-element:nth-child(even) {
+          margin-left: 0rem;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        .timeline-element {
+          width: 100%;
+          text-align: left;
+          padding-left: 2.5rem;
+          padding-right: 0;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        .timeline-element:nth-child(even)::before {
+          left: 1px;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        .timeline-element::before {
+          top: 1.25rem;
+        }
+      }
+
+.hero-image2 {
+  background-image: url("../img/banner2.jpg");
+  height: 675px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text2 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  margin-top: 20px;
+
+}
+
+
+.choose_t{
+	text-align: center;
+	font-size: 35px;
+}
+
+
+.parentchoose{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.div1,
+.div2{
+	width: 40%;
+}
+
+.link{
+	color: white;
+}
+
+.link:hover{
+	color: white;
+	text-decoration: none;
+}
+
+.link2:hover{
+	text-decoration: none;
+}
+
+.p_div{
+	text-align: center;
+	font-size: 30px;
+}
+
+.p_img{
+	width: max-content;
+	margin: 0 auto;
+}
+
+@media(max-width: 800px) {
+	.parentchoose{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.div1,
+	.div2{
+		text-align: center;
+		margin: 0 auto;
+		width: max-content;
+	}
+
+}
+
+.button2{
+	width: 180px;
+	height: 55px;
+	background-color: red;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+	color: white;
+	margin: 0 auto;
+	width: content;
+}
+
+.hero-image3 {
+  background-image: url("https://hevcars.com.ua/wp-content/uploads/2018/02/tesla-model-3-exterior-hevcars-05.jpg");
+  height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.col-lg-7{
+	color: #fff;
+}
+
+.container{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+@media(max-width: 800px) {
+	.container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.card{
+		margin: 0 auto;
+		width: max-content;
+	}
+}
+
+a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+a{ color: black; }
+
+.parent{
+	display: flex;
+	justify-content: center;
+
+}
+
+.w1,
+.w2,
+.w3,
+.w4{
+	width: 20%;
+}
+
+.w2_2{
+	margin-left: 50px;
+}
+
+.w2,
+.w3,
+.w4{
+	text-align: center;
+}
+
+@media(max-width: 800px) {
+	.parent{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+.hero-image4 {
+  background-image: url("https://hevcars.com.ua/wp-content/uploads/2018/02/tesla-model-3-exterior-hevcars-05.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.w1,
+.w2,
+.w3,
+.w4{
+	margin: 0 auto;
+	width: max-content;
+}
+
+.w2_2{
+	text-align: center;
+	margin-left: 150px;
+}
+
+.flexbox{
+	width: 500px;
+	width: content;
+	margin: 0 auto;
+	color: #fff;
+}
+}
+
+.bottom-top{
+	text-align: center;
+}
+
+span{
+font-family: 'Indie Flower', cursive;
+}

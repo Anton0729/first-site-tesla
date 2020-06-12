@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="img/teslaclubb.png" type="image/png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Инфаструктура | Tesla Club Ukranine</title>
+	<link rel="stylesheet" type="text/css" href="css/Инфаструктура.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header id="toppage">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top"  style="background-color: #fff;">
+  <a class="navbar-brand" href="#"><img src="https://tesla-club.com.ua/storage/images/teslaclubb.png" href="#toppage" width="120px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index1.html" style="font-size: 20px">Главная<a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span style="font-size: 20px">Електромобили</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="Model x.html">Tesla Model X</a>
+          <a class="dropdown-item" href="Model s.html">Tesla Model S</a>
+          <a class="dropdown-item" href="Model 3.html">Tesla Model 3</a>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#toppage" style="font-size: 20px">Инфаструктура</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="index1.html" style="font-size: 20px">Новости</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="Контакты.html" style="font-size: 20px">Контакты</a>
+      </li>
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0">
+
+      <input class="form-control mr-sm-2" type="Поиск" placeholder="Поиск" aria-label="Поиск">
+
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+    </form>
+  </div>
+</nav>
+</header>
+<br><br>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+    <div id="map"></div>
+
+    <script>
+
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 6,
+          center: {lat: 50.262987, lng: 19.079718}
+        });
+
+        setMarkers(map);
+      }
+
+
+      var beaches = [
+        ['Автосалон Tesla', 50.255245, 30.632298, 4],
+        ['Tesla Supercharger', 50.262987, 19.079718, 5],
+        ['Автосалон Tesla', 48.601133, 14.118652, 3],
+        ['Автосалон Tesla', 47.037704, 15.478278, 2],
+        ['Автосалон Tesla', 52.506416, 13.328391, 1],
+        ['Автосалон Tesla', 48.157135, 16.335304, 1],
+        ['Автосалон Tesla', 50.489632, 30.470495, 1],
+        ['Автосалон Tesla', 50.106528, 14.503320, 1]
+      ];
+
+      function setMarkers(map) {
+
+        var image = {
+          url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          // This marker is 20 pixels wide by 32 pixels high.
+          size: new google.maps.Size(20, 32),
+          // The origin for this image is (0, 0).
+          origin: new google.maps.Point(0, 0),
+          // The anchor for this image is the base of the flagpole at (0, 32).
+          anchor: new google.maps.Point(0, 32)
+        };
+
+        var shape = {
+          coords: [1, 1, 1, 20, 18, 20, 18, 1],
+          type: 'poly'
+        };
+        for (var i = 0; i < beaches.length; i++) {
+          var beach = beaches[i];
+          var marker = new google.maps.Marker({
+            position: {lat: beach[1], lng: beach[2]},
+            map: map,
+            icon: image,
+            shape: shape,
+            title: beach[0],
+            zIndex: beach[3]
+          });
+        }
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoxKFkTRnex79ixJxqXQVw3gY_Xg0OEFc&callback=initMap">
+    </script>
+
+
+<footer style="background-color: #f1f1f1">
+  <br><br>
+  <div class="parent">
+    <div class="w1">
+     <h5 class="font-weight-bold text-uppercase mb-4"><a style="color: black; text-decoration: none;" href="https://old.go-tou.com/ua/goods" target="_blank">Зарядные устройства</a></h5>
+        <p><img height="200" width="150" class="w2_2" src="img/123.jpg"></p>
+        <p>Универсальные, умные зарядные станции.</p><p> Лучший выбор для подключения к платформе Go To-U.</p>
+    </div>
+    <div class="w2">
+      <h5 class="font-weight-bold text-uppercase mb-4"><a href="index1.html" style="color: black; text-decoration: none;">Быстрая Доставка</a></h5>
+       <h5 class="font-weight-bold text-uppercase mb-4">Главная</h5>
+       <ul class="list-unstyled">
+          <li>
+            <p>
+              <a href="#toppage" style="color: black; text-decoration: none;">Инфаструктура</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="index1.html" style="color: black; text-decoration: none;">Новости</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="Контакты.html" style="color: black; text-decoration: none;">Контакты</a>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <a href="Model x.html" style="color: black; text-decoration: none;">Tesla Model X</a>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <a href="Model s.html"style="color: black; text-decoration: none;" >Tesla Model S</a>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <a href="Model 3.html" style="color: black; text-decoration: none;">Tesla Model 3</a>
+            </p>
+          </li>
+        </ul>
+    </div>
+    <div class="w3">
+      <h5 class="font-weight-bold text-uppercase mb-4"><a href="index1.html" style="color: black; text-decoration: none;">Наши Услуги</a></h5>
+      <h5 class="font-weight-bold text-uppercase mb-4" style="color: black; text-decoration: none;">Адресс</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-envelope mr-3"></i><a style="color: black; font-family: 'Times New Roman', Times, serif; text-decoration: none;" ;  href="mailto: sk.anton06@gmail.com">sk.anton06@gmail.com</a></p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i><a href="tel: +380682505442" style="color: black; text-decoration: none; font-family: 'Times New Roman', Times, serif;" >0682505442</a></p>
+          </li>
+        </ul>
+    </div>
+    <div class="w4">
+      <h5 class="font-weight-bold text-uppercase mb-4"><a href="#garantia" style="color: black; text-decoration: none;">Гарантия</a></h5>
+              <h5 class="font-weight-bold text-uppercase mb-4">Социальные сети</h5>
+
+        <!-- Facebook -->
+        <a href="https://ru-ru.facebook.com/Kharkov.Hillel/" target="blank" type="button" class="btn-floating btn-fb">
+          <i class="fab fa-facebook-f" style="color: black; text-decoration: none;"></i>
+        </a>
+
+        <a href="https://www.instagram.com/hillel_itschool/?hl=ru" target="_blank" type="button" class="btn-floating btn-fb">
+          <i class="fab fa-instagram" style="color: black; text-decoration: none;"></i>
+        </a>
+        
+        <a  href="https://www.pinterest.com/oregonelectricv/tesla-motors/" target="blank" type="button" class="btn-floating btn-tw">
+          <i class="fab fa-pinterest" style="color: black; text-decoration: none;"></i>
+        </a>
+    </div>
+  </div>
+    <div class="bottom-top" >
+  <span>Copyright © 2020 Tesla Club Ukranian. Все права защищены.</span>
+  <br>
+  <a class="link2" href="#toppage"><span class="bottom-top" style="color: black; text-decoration: none;"> К верху страницы</span></a>
+</div>
+<br>
+</footer>
+
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("a[href*=#]").on("click", function (e) {
+      var anchor = $(this);
+      $('html, body').stop().animate({
+        scrollTop: $(anchor.attr('href')).offset().top
+      }, 777);
+      e.preventDefault();
+      return false;
+    });
+  });
+</script>
